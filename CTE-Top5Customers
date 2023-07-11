@@ -1,4 +1,4 @@
-# Top 5 Customers in Each Country (using CTE)
+-- The below SQL code is querying for the Top 5 Customers in Each Country (using CTE)
 WITH top_5_customers (customer_id, first_name, last_name, country, city, total_amount_paid) AS 
 (SELECT A. customer_id, A. first_name, A. last_name, D. country, C. city, SUM(E. amount) AS
 total_amount_paid
